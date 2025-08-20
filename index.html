@@ -329,12 +329,42 @@
             margin-top: 40px;
         }
         
+        /* Image container fixes for GitHub Pages */
+        .mission-image {
+            width: 100%;
+            max-width: 100%;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        
+        .mission-image img {
+            max-width: 100% !important;
+            width: 100% !important;
+            height: auto !important;
+            display: block;
+            object-fit: contain;
+            box-sizing: border-box;
+        }
+        
+        /* Ensure all images are responsive */
+        img {
+            max-width: 100%;
+            height: auto;
+            box-sizing: border-box;
+        }
+        
         @media (max-width: 768px) {
             .container { padding: 10px; }
             .header { padding: 20px; }
             .header h1 { font-size: 2rem; }
             .nav { flex-direction: column; align-items: center; }
             .section { padding: 20px; }
+            
+            /* Extra mobile image constraints */
+            .mission-image img {
+                max-width: 100% !important;
+                width: 100% !important;
+            }
         }
     </style>
 </head>
@@ -360,22 +390,22 @@
             <div class="links-grid">
                 <div class="link-card">
                     <h4>📁 All Bhutan Demo Documents</h4>
-                    <a href="#">Official SharePoint Folder</a>
-                    <p>Maintained by pilots - comprehensive collection of all related documents</p>
+                    <a href="https://endureair1.sharepoint.com/:f:/s/FlightOperations/Eq8afsEeLX9Om5en1zWh1aAB_C-XFTLlVgsI98cZZKKQIQ?e=RpXbhR">SharePoint Folder</a>
+                    <p>Complete collection of official documents</p>
                 </div>
                 <div class="link-card">
                     <h4>📄 Official Pilot Report</h4>
-                    <a href="#">Bhutan DHI POC - Demo Report</a>
-                    <p>Detailed report prepared by the flight operations team</p>
+                    <a href="https://endureair1.sharepoint.com/:b:/s/FlightOperations/Ea4AnkyJHIxLsMpQ-3cRuesB3q-higOv_Nw4UMAH0Ba-tg?e=FhgdJS">Pilot Report PDF</a>
+                    <p>Detailed report prepared by flight operations team</p>
                 </div>
                 <div class="link-card">
-                    <h4>📊 Excel Track Sheet</h4>
-                    <a href="#">DHI Demo & Recce Data Collection</a>
-                    <p>Compliance tracking and data collection spreadsheet</p>
+                    <h4>📊 Excel Tracking Sheet</h4>
+                    <a href="https://endureair1-my.sharepoint.com/:x:/g/personal/ishika_jain_endureair_tech/ET_Jh2jfgdtJo_1H77MxOHUBHEeGN15gc_q72Pq4Yxal2g?e=Wb33rY">Flight Tracking Data</a>
+                    <p>Comprehensive flight tracking and analysis data</p>
                 </div>
                 <div class="link-card">
-                    <h4>📝 Flight Logs</h4>
-                    <a href="#">All Flight Logs and Recorded Data</a>
+                    <h4>📁 Flight Logs & Data</h4>
+                    <a href="https://endureair1.sharepoint.com/:f:/s/FlightOperations/EkdvMeBMUwlGuW5DZU1s4SkBtqf8EFHrnhc3LE0_ijLKvA?e=86y20I">Flight Data Archive</a>
                     <p>Complete collection of flight logs and telemetry data</p>
                 </div>
             </div>
@@ -492,7 +522,7 @@
         <section id="planning" class="section">
             <h2>🗺️ Mission Planning</h2>
             <div class="mission-image">
-                <img src="Bhutan Demo Mission.png" alt="Bhutan Demo Mission Flight Path" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); margin: 15px 0;">
+                <img src="Bhutan Demo Mission.png" alt="Bhutan Demo Mission Flight Path">
             </div>
         </section>
         
@@ -712,6 +742,10 @@
             <p>🚁 Bhutan Drone Delivery Mission Report</p>
             <p>Comprehensive documentation of autonomous rice bag delivery demonstration</p>
             <p><em>Phojoding Monastery • Thimphu, Bhutan • 2025</em></p>
+            <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.2);">
+                <p><a href="simplified_doc.html" style="color: #3498db; text-decoration: none; font-weight: 500;">🎨 View Simplified Version</a></p>
+                <p style="font-size: 0.9em; margin-top: 5px;">Alternative clean layout with enhanced readability</p>
+            </div>
         </div>
     </div>
     
